@@ -1,0 +1,36 @@
+body{
+    background-color: #463d36;
+    font-family: sans-serif;
+    color: #a6192e;
+}
+
+.box{
+    width: 600px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 100px auto;
+    padding: 40px;
+}
+
+.box h1{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.box h2{
+    font-weight: 100;
+    font-size: 40px;
+    margin-top: 0;
+}
+.box p{
+    font-size: 28px;
+}
+.box button {
+    font-size: 24px;
+    color: #fff;
+    background-color: #463d36;
+    font-weight: bold;
+    padding: 30px 40px;
+    text-decoration: none;
+    margin-bottom: 40px;
+}

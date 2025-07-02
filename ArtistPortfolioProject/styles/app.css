@@ -93,6 +93,7 @@ a.active {
     .card {
         width: 100%;
     }
+
     .about {
         margin: 100px 0 100px 100px;
     }
@@ -106,6 +107,7 @@ a.active {
     .gallery {
         padding: 8px;
     }
+
     .about {
         margin: 0 auto 100px auto;
         min-width: 450px;

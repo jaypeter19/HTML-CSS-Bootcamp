@@ -24,9 +24,7 @@
     --spacing-md: 16px;
     --spacing-lg: 32px;
     --spacing-xl: 64px;
-
     --standard-width: 1144px;
-
     --purple-1: #6962f7;
     --purple-2: #7000ff;
     --blue-1: #00d4ff;
@@ -290,5 +288,21 @@ main {
 
 .hero-phone {
     height: 628px;
-    transform: translateY(-32px);
+    transform: translate(32px, -32px);
+}
+
+/* PARTNERS SECTION */
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: var(--spacing-xl) 0;
+    column-gap: var(--spacing-md);
+    row-gap: var(--spacing-lg);
+}
+
+.partners-grid img {
+    height: 60px;
+    place-self: center;
 }

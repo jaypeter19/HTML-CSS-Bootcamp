@@ -409,24 +409,26 @@ p {
     grid-area: card;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
 }
 
 #slack-invoice {
     grid-area: slack;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
 }
 
 #phone {
     grid-area: phone;
     width: 100%;
-    box-shadow: var(--standard-box-shadow);
 }
 
 #dash {
     grid-area: dash;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: 20px;
 }
 
 /* INTEGRATIONS SECTION */
@@ -775,4 +777,58 @@ p {
 .footer h3 {
     font-size: var(--h6-size);
     font-weight: 700;
+}
+
+/* RESPONSIVE CSS */
+
+
+@media only screen and (max-width:1144px) {
+    .section-container {
+        padding: 0 var(--spacing-md);
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    :root {
+        --h1-size: 64px;
+        --h1-height: 72px;
+        --h3-size: 34px;
+    }
+
+    .partners-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* UNIFIED PLATFORM */
+    .unified-platform-section h2 {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:576px) {
+    .two-column {
+        flex-direction: column;
+    }
+
+    .two-column .col-left {
+        width: 100%;
+    }
+
+    .two-column .col-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .partners-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* UNIFIED PLATFORM */
+    .unified-platform-section h2 {
+        width: 100%;
+    }
+
 }

@@ -822,6 +822,16 @@ p {
         width: 100%;
     }
 
+    /* WHY SWIPE */
+    .why-swipe-section .card-container {
+        flex-wrap: wrap;
+    }
+
+    .why-swipe-section .card-container .card {
+        width: 50%;
+        margin: var(--spacing-md) 0;
+    }
+
 }
 
 @media only screen and (max-width:576px) {
@@ -851,6 +861,15 @@ p {
 
     .integration-section .col-right {
         display: none;
+    }
+
+    /* WHY SWIPE SECTION */
+     .why-swipe-section .card-container .card {
+        width: 100%;
+    }
+
+     .why-swipe-section .card-container .card .icon{
+        height: 35px;
     }
 
 }

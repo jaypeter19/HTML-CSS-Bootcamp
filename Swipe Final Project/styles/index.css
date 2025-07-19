@@ -806,6 +806,22 @@ p {
         width: 100%;
     }
 
+    /* INTEGRATION SECTION */
+    .integration-section .col-left {
+        width: 60%;
+    }
+
+    .integration-section .col-right {
+        width: 40%;
+    }
+
+    .integration-section .card-container {
+        flex-direction: column;
+    }
+     .integration-section .card-container .card {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width:576px) {
@@ -831,4 +847,17 @@ p {
         width: 100%;
     }
 
+    /* INTEGRATIONS SECTION */
+
+    .integration-section .col-right {
+        display: none;
+    }
+
+}
+
+html,
+body {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
 }

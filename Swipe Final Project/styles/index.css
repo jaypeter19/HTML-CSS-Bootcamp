@@ -818,7 +818,8 @@ p {
     .integration-section .card-container {
         flex-direction: column;
     }
-     .integration-section .card-container .card {
+
+    .integration-section .card-container .card {
         width: 100%;
     }
 
@@ -838,6 +839,7 @@ p {
         flex-wrap: wrap;
         margin: var(--spacing-xl) 0;
     }
+
     .global-section .card-container .card {
         width: 50%;
         margin: var(--spacing-md) 0;
@@ -875,11 +877,11 @@ p {
     }
 
     /* WHY SWIPE SECTION */
-     .why-swipe-section .card-container .card {
+    .why-swipe-section .card-container .card {
         width: 100%;
     }
 
-     .why-swipe-section .card-container .card .icon{
+    .why-swipe-section .card-container .card .icon {
         height: 35px;
     }
 
@@ -892,6 +894,25 @@ p {
 
     #globe {
         opacity: 10%;
+    }
+
+    /* VIRTUAL EVENTS SECTION */
+
+    .virtual-events-section .swipe-sessions-card {
+        margin: var(--spacing-lg) 0;
+        width: 100%;
+    }
+
+    .virtual-events-section .swipe-sessions-card .card-top {
+        height: 40%;
+    }
+
+    .virtual-events-section .swipe-sessions-card .secondary-text {
+        width: 100%;
+    }
+
+    #session-logo {
+        width: 300px;
     }
 
 }

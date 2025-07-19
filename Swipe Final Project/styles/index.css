@@ -326,11 +326,11 @@ p {
     justify-content: center;
 }
 
-.hero p {
+.hero-section p {
     max-width: 480px;
 }
 
-.hero .hero-phone-container {
+.hero-section .hero-phone-container {
     height: 564px;
     align-items: flex-end;
 }
@@ -789,11 +789,60 @@ p {
 
 }
 
+@media only screen and (max-width:992px) {
+    :root {
+        --h1-size: 76px;
+        --h1-height: 85px;
+    }
+
+    .hero-phone {
+        height: 550px;
+        transform: translateY(-60px);
+    }
+
+    .hero-section .col-left {
+        width: 60%;
+    }
+    .hero-section .col-right {
+        width: 40%;
+    }
+
+}
+
+
 @media only screen and (max-width:768px) {
     :root {
-        --h1-size: 64px;
-        --h1-height: 72px;
+        --h1-size: 55px;
+        --h1-height: 65px;
         --h3-size: 34px;
+    }
+
+    /* NAVBAR STYLES */
+    
+    #canvas-gradient {
+        height: 820px;
+    }
+
+    .navbar {
+        margin: 0 0 var(--spacing-lg) 0;
+    }
+
+    /* HERO STYLES */
+
+    .hero-section .two-column {
+        align-items: center;
+    }
+
+    .hero-section .col-left {
+        width: 60%;
+    }
+    .hero-section .col-left {
+        width: 40%;
+    }
+
+    .hero-phone {
+        height: 450px;
+        transform: translateX(32px);
     }
 
     .partners-grid img {
@@ -862,6 +911,13 @@ p {
 }
 
 @media only screen and (max-width:576px) {
+
+    :root {
+        --h1-size: 50px;
+        --h1-height: 60px;
+        --h3-size: 34px;
+    }
+
     .two-column {
         flex-direction: column;
     }
@@ -874,6 +930,27 @@ p {
         width: 100%;
         padding: 0;
     }
+    /* NAVBAR STYLES */
+
+    .navbar {
+        margin: 0 0 var(--spacing-lg) 0;
+    }
+
+    /* HERO STYLES */
+
+    #canvas-gradient {
+        height: 820px;
+    }
+
+    main {
+        margin: var(--spacing-lg) 0 0 0;
+    }
+
+    .hero-section .two-column .hero-phone-container {
+        display: none;
+    }
+
+    /* PARTNERS GRID SECTION */
 
     .partners-grid {
         grid-template-columns: 1fr 1fr;
@@ -937,6 +1014,7 @@ p {
         width: 50%;
         margin: var(--spacing-md) 0;
     }
+
     .footer .col a {
         font-size: 12px;
     }

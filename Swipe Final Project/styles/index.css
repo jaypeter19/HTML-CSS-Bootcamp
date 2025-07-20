@@ -803,6 +803,11 @@ p {
     .section-container {
         padding: 0 var(--spacing-md);
     }
+     /* PARTNERS GRID SECTION */
+
+    .partners-grid {
+        margin: 0 0 var(--spacing-xl) 0;
+    }
 
 }
 
@@ -890,6 +895,12 @@ p {
     .hero-phone {
         height: 450px;
         transform: translateX(32px);
+    }
+
+    /* PARTNERS GRID SECTION */
+
+    .partners-grid {
+        margin: 0 0 var(--spacing-xl) 0;
     }
 
     .partners-grid img {

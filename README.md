@@ -1,1 +1,3 @@
-Este é um repositório de desenvolvimento para o curso HTML & CSS Bootcamp ministrado por Colt Steele na plataforma de ensino Udemy.
+#Swipe
+
+Final project for the 2025 edition HTML & CSS Bootcamp

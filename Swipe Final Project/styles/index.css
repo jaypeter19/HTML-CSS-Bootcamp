@@ -907,6 +907,10 @@ p {
     }
 
     /* WHY SWIPE */
+    .why-swipe-section {
+        padding: var(--spacing-md) 0 var(--spacing-xl) 0;
+    }
+
     .why-swipe-section .card-container {
         flex-wrap: wrap;
     }
@@ -993,17 +997,34 @@ p {
     }
 
     /* UNIFIED PLATFORM */
+    .unified-platform-section {
+        padding: var(--spacing-md) 0;
+    }
+
     .unified-platform-section h2 {
         width: 100%;
     }
 
     /* INTEGRATIONS SECTION */
 
+    .integration-section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .integration-section::before {
+        height: 900px;
+    }
+
     .integration-section .col-right {
         display: none;
     }
 
     /* WHY SWIPE SECTION */
+
+    .why-swipe-section {
+        padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
+    }
+
     .why-swipe-section .card-container .card {
         width: 100%;
     }
@@ -1013,6 +1034,14 @@ p {
     }
 
     /* GLOBAL SECTION */
+
+    .global-section {
+        padding: var(--spacing-xl) 0 0 0;
+    }
+
+    .global-section .card-container {
+        margin: var(--spacing-md) 0;
+    }
 
     .global-section .card-container .card {
         width: 100%;
@@ -1024,6 +1053,10 @@ p {
     }
 
     /* VIRTUAL EVENTS SECTION */
+
+    .virtual-events-section {
+        padding: 0;
+    }
 
     .virtual-events-section .swipe-sessions-card {
         margin: var(--spacing-lg) 0;
@@ -1040,6 +1073,12 @@ p {
 
     #session-logo {
         width: 300px;
+    }
+
+    /* GETTING STARTED SECTION */
+
+    .getting-started-section {
+        padding: var(--spacing-md) 0;
     }
 
     .footer .section-container {

@@ -26,6 +26,7 @@
     --spacing-md: 16px;
     --spacing-lg: 32px;
     --spacing-xl: 64px;
+    --spacing-mobile: 38px;
     --standard-width: 1144px;
     /* COLORS VARIABLES */
     --purple-1: #6962f7;
@@ -306,8 +307,16 @@ p {
 
 
 .hamburger-button {
+    position: fixed;
+    right: var(--spacing-mobile);
+    z-index: 5;
     display: none;
 }
+
+.mobileNav {
+    display: none;
+}
+
 
 /* ANIMATED GRADIENT BACKGROUND */
 
@@ -803,7 +812,8 @@ p {
     .section-container {
         padding: 0 var(--spacing-md);
     }
-     /* PARTNERS GRID SECTION */
+
+    /* PARTNERS GRID SECTION */
 
     .partners-grid {
         margin: 0 0 var(--spacing-xl) 0;
@@ -852,7 +862,7 @@ p {
         margin: 0 0 var(--spacing-lg) 0;
     }
 
-    .navbar .menu {
+    .navbar>.menu {
         display: none;
     }
 
@@ -876,6 +886,47 @@ p {
         height: 2px;
         background-color: var(--bg-white);
         margin: 1px 0;
+    }
+
+    .mobileNav {
+        background-color: rgba(250, 250, 250, 0.25);
+        width: 100px;
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -160px;
+        z-index: 4;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: transform 0.25s ease;
+    }
+
+    .mobileNav .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: var(--spacing-md) 0;
+    }
+
+    .mobileNav .menu li {
+        margin: var(--spacing-sm) 0;
+    }
+
+    .mobileNav .menu a {
+        color: var(--primary-accent);
+        text-decoration: none;
+    }
+
+    .mobileNav a:hover {
+        text-decoration: underline;
+    }
+
+    .openDrawer {
+        transform: translateX(-160px);
     }
 
     /* HERO SECTION */
